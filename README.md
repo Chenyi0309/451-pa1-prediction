@@ -76,4 +76,8 @@ AI assistants, such as ChatGPT, were used in the following ways:
 - Explaining error tracebacks
 - Generating summary tables and README structure
 
+## Limitations and Future Improvements
+
+While the model demonstrates the full pipeline from data preparation to time-series cross-validation, the achieved AUC score (0.5145) is only slightly better than random guessing. Future work may explore incorporating additional technical indicators, external macroeconomic features, or using more sophisticated models like LSTM or Temporal Fusion Transformers to improve prediction performance.
+
 All AI-generated content was reviewed and modified for correctness and alignment with the assignment's requirements.
