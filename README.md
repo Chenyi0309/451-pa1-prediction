@@ -2,11 +2,11 @@
 
 This repository contains the code, datasets, and final report for the Programming Assignment 1 of DS/CS 451. The goal of this assignment is to use a financial time series dataset to predict next-day returns using machine learning methods. Specifically, we apply XGBoost with time-series-aware cross-validation, using lagged features derived from historical WTI crude oil prices.
 
-## 🔍 Problem Description
+## Problem Description
 
 The objective is to predict whether the next day’s return is positive or negative using past financial indicators derived from daily WTI prices. We engineer a variety of lag-based features (price, volume, volatility, etc.) and evaluate the predictive power of XGBoost using time-series-aware cross-validation.
 
-## 🧱 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -18,7 +18,7 @@ The objective is to predict whether the next day’s return is positive or negat
 ├── README.md                          # This file
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 - Python 3.9+
 - `polars`
@@ -36,7 +36,7 @@ Install all required packages via:
 pip install polars pandas numpy xgboost scikit-learn yfinance matplotlib seaborn
 ```
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repo:
    ```bash
@@ -56,33 +56,24 @@ pip install polars pandas numpy xgboost scikit-learn yfinance matplotlib seaborn
    jupyter nbconvert --to html 451_pa1_jump_start_v001.ipynb
    ```
 
-## 🧪 Model Summary
+## Model Summary
 
 - **Model Used:** XGBoost Classifier
 - **Evaluation:** TimeSeriesSplit with 5-fold cross-validation
 - **Metric:** ROC AUC
-- **Result:** Average AUC ≈ **0.5123**
+- **Result:** Average AUC ≈ **0.5145**
 
 > Note: The performance is close to random guessing due to the weak signal in short-term return prediction. Future improvements could include technical indicators, macroeconomic features, or alternative targets.
 
-## 📄 Report
+## Report
 
 Please see `451_pa1_report.pdf` for the full research design, methodology, feature explanation, and evaluation results.
 
-## 🤖 Use of AI Assistants
+## Use of AI Assistants
 
 AI assistants, such as ChatGPT, were used in the following ways:
 - Code debugging (e.g., fixing `X_scaled not defined`)
 - Explaining error tracebacks
 - Generating summary tables and README structure
-- Clarifying how to convert notebooks to HTML and export from Google Colab
 
 All AI-generated content was reviewed and modified for correctness and alignment with the assignment's requirements.
-
-## 🔗 GitHub Clone URL
-
-```
-https://github.com/YOUR_USERNAME/451_pa1_wti.git
-```
-
-> Replace `YOUR_USERNAME` with your actual GitHub username.
